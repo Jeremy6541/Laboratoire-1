@@ -1,3 +1,6 @@
-import math
-n = 23
-print (math.factorial(n))
+#definition de factorielle
+def factorielle(n):
+    return 1 if (n==1 or n==0) else n * factorielle(n - 1) 
+
+num = 5
+print ("factorielle de" ,num, "=", factorielle(num))
